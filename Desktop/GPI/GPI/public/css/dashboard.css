@@ -1,0 +1,194 @@
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    padding-top: 1rem;
+    font-family: 'poppins', sans-serif;
+
+  }
+  
+  .sidebar .nav-link {
+    color: #333;
+    font-size: 14px;
+    padding: 14px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar .nav-link.active,
+  .sidebar .nav-link:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .sidebar .nav-link i {
+    margin-right: 10px;
+  }
+  nav{
+    font-family: 'poppins', sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 25px;
+    font-size: 14px;
+    align-content: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    max-width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+ nav .nav_left{
+    display: flex;
+    gap: 12px;
+}
+nav .nav_left a{
+    text-decoration: none;
+    color: black;
+}
+nav .nav_right{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: -6px;
+}
+ nav .nav_right .logout{
+    padding: 4px;
+    border-radius: 9px;
+    gap: 4px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    align-content: center;
+}
+nav .nav_right .logout button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+  .img-txt .img{
+    width: 50%;
+    height: 200px;
+    border-radius: 20px;
+    background: url(gap.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Main content */
+  main {
+    font-family: 'poppins', sans-serif;
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #ffff;
+    border-left: 1px solid #ddd;
+    min-height: 100vh;
+  }
+  
+
+  
+  /* Cards */
+  .card {
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+  }
+  .card a{
+    text-decoration: none;
+  }
+  .card .display-4 {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  /* Table */
+  .table-responsive {
+    margin-top: 20px;
+  }
+  .table-responsive .contenu-for-add{
+    display:flex;
+    justify-content: space-between;
+  }
+  .table-responsive .contenu-for-add a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .table-dark{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+  }
+  
+  table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background: #f8f9fa;
+  }
+  
+  table tr:hover {
+    background: rgba(0, 123, 255, 0.1);
+  }
+  .flexx i{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  .txt p{
+    text-align: justify;
+    color: #000000;
+  }
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color:light;
+  padding-left: 8px;
+  border-left: 1px solid #ddd;
+}
+.dropdown-container a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  margin: 10px ;
+  padding: 6px;
+}
+.dropdown-container a i{
+  margin-right: 10px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: rgba(205, 203, 246, 0.667);
+  color: #2b029e;
+}
+.dropdown-container a:hover{
+  background-color: #fdfdfd;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}

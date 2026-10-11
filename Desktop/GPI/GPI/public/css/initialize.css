@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.r-reservation {
+    height: 500px;
+    width: 80%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    
+}
+form{
+    margin: 2rem;
+}
+.abcd{
+    display: block;
+    margin: 12px 0;
+}
+.abcd label{
+    display: block;
+}
+.abcd input{
+    width: 350px;
+    border: 1px solid #eee;
+    padding: 8px 20px;
+    margin: 5px 0;
+}
+button{
+    padding: 11px 20px;
+    margin: 7px 0;
+    background-color: #4ac978e7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: 1px solid #4ac97935;
+
+}
+form a{
+    text-decoration: none;
+}

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.r-reservation {
+    height: 500px;
+    width: 80%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 50px rgba(145, 145, 145, 0.157);
+    padding: 2.5rem;
+    margin: 2rem auto;
+    
+}
+
+.colorful-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffff;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff9c;
+    border: 1px solid #eee;
+    color: #333;
+    outline: none;
+  }
+  
+  textarea.form-input {
+    height: 100px;
+  }
+  
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4ac978e7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #64b556ad;
+  }
+  

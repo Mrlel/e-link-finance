@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    font-family: 'poppins',sans-serif;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.r-reservation {
+    height: 500px;
+    width: 80%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    
+}
+form{
+    display: block;
+    margin: 4rem 3rem;
+    padding-right:4rem ;
+    border-right: 1px solid #eee;
+}
+.form-group, label{
+    display: block;
+}
+.form-group {
+    margin-bottom: 22px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input {
+    width: 350px;
+    padding: 10px;
+    border: none;
+    background:none;
+    border: 1px solid #eee;
+    color: #333;
+    outline: none;
+  }
+form .btn-login{
+    padding: 9px 35px;
+    color: #fff;
+    border: none;
+    background-color:#4ac978e7;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+

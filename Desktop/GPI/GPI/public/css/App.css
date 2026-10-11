@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open-sans', sans-serif;
+    font-size: 14px;
+}
+form label{
+  font-weight: normal;
+}
+.menu .item a{
+  font-size: 12px;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    background: #ffffff; /* Couleur blanche pour la sidebar */
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 50px rgba(202, 202, 202, 0.157);
+  }
+
+  .sidebar.collapsed {
+    width: 80px; 
+    /* Réduit la largeur de la sidebar */
+  }
+
+  .sidebar .sidebar-header {
+    padding: 40px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+  }
+  .sidebar .nav-link {
+    color: #727272; /* Texte noir */
+    padding: 10px 16x;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+  }
+  .sidebar .nav-link:hover {
+    transition: all 1s ease;
+  border-right: 1px solid #2600fd;
+  background-color: #f3f7fe;
+  }
+  .sidebar.collapsed .nav-link span {
+    display: none; /* Masque le texte lorsque la sidebar est rétractée */
+  }
+
+  .sidebar.collapsed .nav-link i {
+    margin: 0 auto; /* Centre les icônes */
+  }
+
+  .content {
+    margin-left: 250px; /* Ajoute un décalage par défaut */
+    transition: margin-left 0.3s ease;
+  }
+
+  .content.collapsed {
+    margin-left: 80px; /* Réduit le décalage lorsque la sidebar est rétractée */
+  }
+  .nav-item .nav-link i{
+    color: #5d5d5d;
+    font-size: 14px;
+    margin-right: 5px;
+ 
+  }
+
+  /* Bouton pour ouvrir/fermer la sidebar */
+  #toggle-sidebar {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-size: 24px;
+    opacity: 0.7; /* Moins visible */
+    transition: opacity 0.3s ease;
+  }
+
+  #toggle-sidebar:hover {
+    opacity: 1; /* Plus visible au survol */
+  }
+#content{
+    font-size: 14px;
+}
+#content .up{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'poppins', sans-serif;
+  font-size: 14px;
+  padding: 7px;
+  border-bottom: 1px solid #ddd;
+}
+#content .up .nav_left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#content .up .nav_left p a{
+    text-decoration: none;
+    color: #000000;
+  }
+  #content .up .nav_right form button{
+    border: none;
+    color: #000000;
+    background: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+  }
+#content .up .nav_right{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  bottom: 10px;
+}
+#content .up .nav_right a{
+  text-decoration: none;
+  color: #000000;
+}
+#content .up .nav_right a:hover{
+  text-decoration: underline;
+}
+
+
+.table-responsive .btn_for_add{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  align-items: center;
+  align-content: center;
+}
+.table-responsive .btn_for_add a{
+  padding: 8px 30px;
+  color: #67646b;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+.table-responsive {
+  margin-top: 20px;
+}
+.table-responsive .contenu-for-add{ 
+  display:flex;
+  justify-content: space-between;
+}
+table{
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 13px;
+}
+.table-head{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+table th{
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #aad4fe;
+  color: #363333;
+}
+ table td {
+  padding: 10px;
+  text-align: left;
+  color: #363333;
+}
+table td ul {
+  display: flex;
+  list-style: none;
+}
+table tr:hover {
+  background: rgba(169, 208, 250, 0.1);
+  height: 10px;
+}
+
+table td a{
+  text-decoration: none;
+  color: #323232;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 10px 0;
+  font-size: 8px;
+}
+
+table td a:hover{
+  scale: 1.1;
+  transition: all 0.3s ease;
+}
+.paginate{
+height: 50px;
+width: 129px;
+margin: auto;
+display: flex;
+}
+.flexx i{
+cursor: pointer;
+height: 50px;
+width: 50px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+margin: 0 5px;
+}
+.tableau{
+background-color: #fff;
+padding: 08px 0;
+border-radius: 6px;
+margin-top: 1rem;
+}
+.msg {
+background-color: #dff0d8;
+color: #3c763d;
+padding: 10px;
+border: 1px solid #d6e9c6;
+border-radius: 5px;
+margin: 10px 0;
+max-width: 400px;
+text-align: center;
+text-align: center;
+position: absolute;
+top: 0;
+right: 36%;
+Z-INDEX: 99;
+}
+.txt p{
+text-align: center;
+}
+.txt .nbr{
+margin: 0;
+font-size: 2rem;
+}
+.dropdown-container{
+margin: 10px;
+display: block;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color:light;
+  padding-left: 8px;
+  border-left: 1px solid #ddd;
+}
+.dropdown-container a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  margin: 10px ;
+  padding: 6px;
+}
+.dropdown-container a i{
+  margin-right: 10px;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: rgba(205, 203, 246, 0.667);
+  color: #2b029e;
+}
+.dropdown-container a:hover{
+  background-color: #fdfdfd;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+thead th{
+  background-color: #06668C;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px;
+}
+table th{
+  font-size: 14px;
+  font-weight: normal;
+}
